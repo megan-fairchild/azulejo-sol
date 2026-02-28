@@ -1,0 +1,397 @@
+/* ═══════════════════════════════════════════════════
+   AZULEJO & SOL — Shared Stylesheet
+   Lisbon & Odeceixe Girls Trip · May 2026
+   ═══════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0A1628;
+  --card: #0F1F35;
+  --card-border: #1A3050;
+  --blue: #3B82C8;
+  --blue-light: #5BA0E0;
+  --gold: #D4A04A;
+  --gold-light: #E8B860;
+  --cream: #FFF8F0;
+  --text: #E0E8F0;
+  --dim: #6B7B8D;
+  --white: #FFFFFF;
+  --r: 12px;
+  --heading-font: 'Cormorant Garamond', Georgia, serif;
+  --body-font: 'Inter', -apple-system, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--blue-light); text-decoration: none; transition: color 0.3s; }
+a:hover { color: var(--gold); }
+
+/* ── Navigation ── */
+.top-nav {
+  position: sticky; top: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 16px;
+  background: rgba(10, 22, 40, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+}
+.top-nav a {
+  font-family: var(--body-font);
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--dim); padding: 6px 12px;
+  border-radius: 6px; transition: all 0.3s;
+}
+.top-nav a:hover { color: var(--blue-light); background: rgba(59, 130, 200, 0.08); }
+.top-nav a.active { color: var(--gold); background: rgba(212, 160, 74, 0.1); }
+
+/* ── Page Header ── */
+.page-header {
+  text-align: center; padding: 48px 20px 32px;
+  border-bottom: 1px solid var(--card-border);
+}
+.page-header .emblem { font-size: 36px; margin-bottom: 8px; }
+.page-header h1 {
+  font-family: var(--heading-font);
+  font-size: 2rem; font-weight: 700;
+  color: var(--cream); letter-spacing: 2px;
+}
+.page-header .subtitle {
+  font-size: 0.85rem; color: var(--dim);
+  margin-top: 6px; font-style: italic;
+}
+
+/* ── Container ── */
+.container { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+
+/* ── Section Headers ── */
+.section-header {
+  margin: 32px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--card-border);
+}
+.section-header h2 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem; font-weight: 700;
+  color: var(--gold); letter-spacing: 1px;
+}
+
+/* ── Day Cards (Itinerary) ── */
+.day-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--r);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.day-header {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.day-header:hover { background: rgba(59, 130, 200, 0.04); }
+.day-badge {
+  font-family: var(--heading-font);
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--gold);
+  background: rgba(212, 160, 74, 0.1);
+  border: 1px solid rgba(212, 160, 74, 0.2);
+  border-radius: 8px;
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.day-info { flex: 1; }
+.day-name {
+  font-family: var(--heading-font);
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--cream);
+}
+.day-date { font-size: 0.78rem; color: var(--dim); margin-top: 2px; }
+.day-chev { color: var(--dim); font-size: 14px; transition: transform 0.3s; }
+.day-card.open .day-chev { transform: rotate(180deg); }
+.day-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.day-card.open .day-body { max-height: 2000px; }
+.day-content { padding: 0 20px 20px; }
+
+/* ── Timeline Items ── */
+.tl { list-style: none; padding: 0; }
+.tl li {
+  display: flex; gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.tl li:last-child { border-bottom: none; }
+.time {
+  font-family: var(--body-font);
+  font-size: 0.75rem; font-weight: 600;
+  color: var(--blue-light);
+  min-width: 50px; flex-shrink: 0;
+  padding-top: 2px;
+}
+
+/* ── Tags ── */
+.tag {
+  display: inline-block;
+  font-size: 0.6rem; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 4px;
+  margin-left: 6px; vertical-align: middle;
+}
+.tag-food { background: rgba(212, 160, 74, 0.15); color: var(--gold); }
+.tag-culture { background: rgba(59, 130, 200, 0.15); color: var(--blue-light); }
+.tag-adventure { background: rgba(76, 175, 80, 0.15); color: #66BB6A; }
+.tag-photo { background: rgba(233, 30, 99, 0.15); color: #E91E63; }
+.tag-travel { background: rgba(156, 39, 176, 0.15); color: #BA68C8; }
+.tag-relax { background: rgba(0, 188, 212, 0.12); color: #4DD0E1; }
+
+/* ── Photo Ops ── */
+.photo-ops {
+  margin-top: 14px; padding: 12px 16px;
+  background: rgba(233, 30, 99, 0.05);
+  border: 1px solid rgba(233, 30, 99, 0.1);
+  border-radius: 8px;
+}
+.photo-ops b { font-size: 0.78rem; color: #E91E63; letter-spacing: 1px; }
+.photo-ops ul {
+  list-style: none; padding: 0; margin-top: 6px;
+}
+.photo-ops li {
+  font-size: 0.82rem; color: var(--dim);
+  padding: 3px 0;
+}
+.photo-ops li::before { content: '📸 '; }
+
+/* ── External Links ── */
+.ext-link {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(59, 130, 200, 0.08);
+  border: 1px solid rgba(59, 130, 200, 0.2);
+  border-radius: 8px;
+  font-size: 0.75rem; font-weight: 600;
+  color: var(--blue-light);
+  margin: 4px 2px;
+  transition: all 0.3s;
+}
+.ext-link:hover {
+  border-color: var(--blue-light);
+  background: rgba(59, 130, 200, 0.15);
+  color: var(--white);
+}
+
+/* ── Recipe / Meal Cards ── */
+.recipe-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--r);
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.rc-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.rc-head:hover { background: rgba(59, 130, 200, 0.04); }
+.rc-title {
+  font-family: var(--heading-font);
+  font-size: 1.05rem; font-weight: 700;
+  color: var(--cream);
+}
+.rc-when { font-size: 0.75rem; color: var(--dim); margin-top: 2px; }
+.rc-chev { color: var(--dim); font-size: 14px; transition: transform 0.3s; }
+.recipe-card.open .rc-chev { transform: rotate(180deg); }
+.rc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.recipe-card.open .rc-body { max-height: 3000px; }
+.rc-content { padding: 0 20px 20px; }
+.rc-label {
+  font-size: 0.7rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--gold); margin: 14px 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.rc-content ul, .rc-content ol { padding-left: 18px; }
+.rc-content li {
+  font-size: 0.85rem; padding: 3px 0;
+  line-height: 1.5; opacity: 0.85;
+}
+.rc-note {
+  font-size: 0.8rem; font-style: italic;
+  color: var(--dim); margin-top: 10px;
+  padding: 8px 12px;
+  background: rgba(212, 160, 74, 0.06);
+  border-radius: 6px;
+}
+
+/* ── Swap Toggle ── */
+.swap-toggle {
+  position: absolute; top: 10px; right: 12px;
+  padding: 5px 14px; border-radius: 8px;
+  font-size: 0.7rem; font-family: var(--body-font);
+  font-weight: 600; letter-spacing: 1px;
+  background: rgba(59, 130, 200, 0.08);
+  color: var(--blue-light);
+  border: 1px solid rgba(59, 130, 200, 0.3);
+  cursor: pointer; z-index: 2;
+  transition: all 0.3s;
+}
+.swap-toggle:hover { background: var(--blue); color: var(--white); }
+
+/* ── Clothing Cards ── */
+.cloth-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--r);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.cloth-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px;
+  cursor: pointer;
+}
+.cloth-head:hover { background: rgba(59, 130, 200, 0.04); }
+.cloth-title {
+  font-family: var(--heading-font);
+  font-size: 1.05rem; font-weight: 700;
+  color: var(--cream);
+}
+.cloth-when { font-size: 0.75rem; color: var(--dim); margin-top: 2px; }
+.cloth-chev { color: var(--dim); font-size: 14px; transition: transform 0.3s; }
+.cloth-card.open .cloth-chev { transform: rotate(180deg); }
+.cloth-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.cloth-card.open .cloth-body { max-height: 2000px; }
+.cloth-content { padding: 0 20px 20px; }
+
+.person-block { margin-top: 10px; }
+.person-name {
+  font-family: var(--heading-font);
+  font-weight: 700; color: var(--gold);
+  font-size: 0.9rem; margin-bottom: 4px;
+}
+.person-block p {
+  font-size: 0.85rem; color: var(--text);
+  opacity: 0.8; line-height: 1.6; padding: 2px 0;
+}
+
+/* ── Grocery / Checklist ── */
+.grocery-section {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--r);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+.grocery-section h4 {
+  font-family: var(--heading-font);
+  font-size: 0.9rem; font-weight: 700;
+  color: var(--gold); margin-bottom: 8px;
+}
+
+.grocery-check {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; padding: 5px 0; cursor: pointer; color: var(--text);
+}
+.grocery-check input[type=checkbox] {
+  width: 18px; height: 18px; flex-shrink: 0;
+  appearance: none; -webkit-appearance: none;
+  border: 2px solid rgba(255,255,255,0.25); border-radius: 4px;
+  background: transparent; cursor: pointer; position: relative;
+}
+.grocery-check input[type=checkbox]:checked {
+  background: var(--blue); border-color: var(--blue);
+}
+.grocery-check input[type=checkbox]:checked::after {
+  content: '✓'; position: absolute; top: -1px; left: 2px;
+  font-size: 13px; color: var(--white); font-weight: bold;
+}
+.grocery-check.checked { opacity: 0.4; text-decoration: line-through; }
+
+/* ── Packing Checklist ── */
+.pack-grid { columns: 2; column-gap: 16px; }
+.pack-grid label {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; padding: 6px 0; color: var(--text); cursor: pointer;
+  break-inside: avoid;
+}
+.pack-grid input[type=checkbox] {
+  width: 18px; height: 18px; flex-shrink: 0;
+  appearance: none; -webkit-appearance: none;
+  border: 2px solid rgba(255,255,255,0.25); border-radius: 4px;
+  background: transparent; cursor: pointer; position: relative;
+}
+.pack-grid input[type=checkbox]:checked {
+  background: var(--blue); border-color: var(--blue);
+}
+.pack-grid input[type=checkbox]:checked::after {
+  content: '✓'; position: absolute; top: -1px; left: 2px;
+  font-size: 13px; color: var(--white); font-weight: bold;
+}
+.pack-grid label:has(input:checked) { opacity: 0.4; text-decoration: line-through; }
+
+/* ── Footer ── */
+.page-footer {
+  text-align: center;
+  padding: 40px 20px 60px;
+  border-top: 1px solid var(--card-border);
+  margin-top: 32px;
+}
+.footer-emblem { font-size: 24px; margin-bottom: 8px; }
+.page-footer p {
+  font-family: var(--heading-font);
+  font-size: 0.9rem; color: var(--dim);
+  font-style: italic;
+}
+
+/* ── Tile Pattern Decoration ── */
+.tile-border {
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--blue) 0px, var(--blue) 8px,
+    var(--gold) 8px, var(--gold) 12px,
+    var(--blue) 12px, var(--blue) 20px,
+    transparent 20px, transparent 24px
+  );
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .page-header h1 { font-size: 1.5rem; }
+  .top-nav a { font-size: 10px; padding: 5px 8px; letter-spacing: 1px; }
+  .pack-grid { columns: 1; }
+  .day-header { padding: 14px 16px; }
+  .day-content { padding: 0 16px 16px; }
+}
+
+/* ── Print ── */
+@media print {
+  body { background: #fff; color: #222; }
+  .top-nav { display: none; }
+  .day-card, .recipe-card, .cloth-card { border-color: #ddd; background: #fff; }
+  .day-body, .rc-body, .cloth-body { max-height: none !important; }
+  .page-header { border-bottom-color: #ddd; }
+  .page-header h1 { color: #222; }
+  a { color: #1a5fa0; }
+}
+
+/* ── Toggle JS helper ── */
+.open > .day-body,
+.open > .rc-body,
+.open > .cloth-body { max-height: 3000px; }

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azulejo &amp; Sol — Trip Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0 32px;
+    }
+    .hub-card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: var(--r);
+      padding: 28px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.3s, transform 0.2s, box-shadow 0.3s;
+      text-decoration: none;
+      display: block;
+    }
+    .hub-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(59, 130, 200, 0.12);
+    }
+    .hub-card .icon { font-size: 36px; margin-bottom: 12px; }
+    .hub-card .card-title {
+      font-family: var(--heading-font);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .hub-card .card-desc {
+      font-size: 12px;
+      color: var(--dim);
+      line-height: 1.5;
+    }
+    .links-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    @media (max-width: 600px) {
+      .hub-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Decorative tile bar -->
+<div class="tile-border"></div>
+
+<!-- Navigation -->
+<nav class="top-nav">
+  <a href="trip-hub.html" class="active">HUB</a>
+  <a href="itinerary.html">ITINERARY</a>
+  <a href="meals.html">FOOD</a>
+  <a href="clothing.html">WARDROBE</a>
+</nav>
+
+<!-- Page Header -->
+<header class="page-header">
+  <div class="emblem">🇵🇹</div>
+  <h1>AZULEJO &amp; SOL</h1>
+  <p class="subtitle">Lisbon &amp; Odeceixe · May 15–23, 2026</p>
+</header>
+
+<div class="container">
+
+  <!-- ═══ Hub Grid ═══ -->
+  <div class="hub-grid">
+    <a href="itinerary.html" class="hub-card">
+      <div class="icon">📋</div>
+      <div class="card-title">Itinerary</div>
+      <div class="card-desc">9 days of golden light, tile streets &amp; ocean breezes</div>
+    </a>
+    <a href="meals.html" class="hub-card">
+      <div class="icon">🍽️</div>
+      <div class="card-title">Food &amp; Drink</div>
+      <div class="card-desc">Seafood feasts, pastel de nata &amp; port wine</div>
+    </a>
+    <a href="clothing.html" class="hub-card">
+      <div class="icon">👗</div>
+      <div class="card-title">Wardrobe</div>
+      <div class="card-desc">What to pack for cobblestones, castles &amp; beaches</div>
+    </a>
+    <a href="#pretip" class="hub-card">
+      <div class="icon">✅</div>
+      <div class="card-title">Pre-Trip</div>
+      <div class="card-desc">Flights, stays, bookings &amp; checklist</div>
+    </a>
+  </div>
+
+  <!-- ═══ External Links ═══ -->
+  <div class="section-header">
+    <h2>🔗 Useful Links</h2>
+  </div>
+  <div class="links-wrap">
+    <a class="ext-link" href="https://www.visitlisboa.com/en" target="_blank" rel="noopener">🌐 Visit Lisbon</a>
+    <a class="ext-link" href="https://www.parquesdesintra.pt/en/parks-and-monuments/park-and-national-palace-of-pena/" target="_blank" rel="noopener">🏰 Pena Palace Tickets</a>
+    <a class="ext-link" href="https://handson.pt/workshop/the-arts-of-azulejos-portuguese-tile-painting-workshop/" target="_blank" rel="noopener">🎨 Tile Workshop</a>
+    <a class="ext-link" href="https://wetravelportugal.com/odeceixe-beach/" target="_blank" rel="noopener">🏖️ Odeceixe Beach</a>
+    <a class="ext-link" href="https://rotavicentina.com/en/" target="_blank" rel="noopener">🥾 Rota Vicentina</a>
+    <a class="ext-link" href="https://clubedefado.pt" target="_blank" rel="noopener">🎶 Clube de Fado</a>
+  </div>
+
+  <!-- ═══ Pre-Trip Checklist ═══ -->
+  <div class="section-header" id="pretip">
+    <h2>✅ Pre-Trip Checklist</h2>
+  </div>
+  <div class="pack-grid" id="pretip-list">
+    <label><input type="checkbox" data-key="0"> Book flights Seattle → Lisbon (1 connection)</label>
+    <label><input type="checkbox" data-key="1"> Book Lisbon Airbnb (5 nights: May 16–19 + May 22)</label>
+    <label><input type="checkbox" data-key="2"> Book Odeceixe villa (2 nights: May 20–21)</label>
+    <label><input type="checkbox" data-key="3"> Book rental car (pickup May 20, return May 22)</label>
+    <label><input type="checkbox" data-key="4"> Buy Pena Palace tickets online</label>
+    <label><input type="checkbox" data-key="5"> Reserve Fado dinner (Clube de Fado or Mesa de Frades)</label>
+    <label><input type="checkbox" data-key="6"> Book Azulejo tile workshop</label>
+    <label><input type="checkbox" data-key="7"> Check passport validity (6+ months)</label>
+    <label><input type="checkbox" data-key="8"> Notify bank of Portugal travel</label>
+    <label><input type="checkbox" data-key="9"> Download offline maps (Lisbon + Algarve)</label>
+    <label><input type="checkbox" data-key="10"> Pack comfortable walking shoes</label>
+    <label><input type="checkbox" data-key="11"> Travel adapter (Type F plug)</label>
+    <label><input type="checkbox" data-key="12"> Buy Viva Viagem transit card on arrival</label>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- Footer -->
+<footer class="page-footer">
+  <div class="footer-emblem">🇵🇹</div>
+  <p>Megan &amp; Niki · Lisbon &amp; Odeceixe · May 2026</p>
+  <p style="margin-top: 4px; font-size: 0.8rem;">Azulejo &amp; Sol 🇵🇹</p>
+</footer>
+
+<script>
+  /* ── Toggle for expandable cards ── */
+  function toggle(el) {
+    const card = el.closest('.day-card, .recipe-card, .cloth-card');
+    if (card) card.classList.toggle('open');
+  }
+
+  /* ── Pre-trip checkbox persistence ── */
+  (function () {
+    const STORAGE_KEY = 'azulsol_pretip';
+    const boxes = document.querySelectorAll('#pretip-list input[type=checkbox]');
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) {}
+
+    boxes.forEach(function (cb) {
+      const k = cb.getAttribute('data-key');
+      if (saved[k]) {
+        cb.checked = true;
+        cb.closest('label').style.opacity = '0.4';
+        cb.closest('label').style.textDecoration = 'line-through';
+      }
+      cb.addEventListener('change', function () {
+        saved[k] = cb.checked;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        if (cb.checked) {
+          cb.closest('label').style.opacity = '0.4';
+          cb.closest('label').style.textDecoration = 'line-through';
+        } else {
+          cb.closest('label').style.opacity = '1';
+          cb.closest('label').style.textDecoration = 'none';
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>

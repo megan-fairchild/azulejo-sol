@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Itinerary — Azulejo &amp; Sol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tile-border"></div>
+
+<nav class="top-nav">
+  <a href="trip-hub.html">Hub</a>
+  <a href="itinerary.html" class="active">Itinerary</a>
+  <a href="meals.html">Food</a>
+  <a href="clothing.html">Wardrobe</a>
+</nav>
+
+<header class="page-header">
+  <div class="emblem">📋</div>
+  <h1>THE ITINERARY</h1>
+  <p>9 days of golden light, cobblestones &amp; ocean breezes</p>
+</header>
+
+<main class="container">
+
+  <!-- DAY 0 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 0</span>
+      <div class="day-info">
+        <span class="day-name">Departure ✈️</span>
+        <span class="day-date">May 15 · Thursday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">PM</span> Evening flight from Seattle (SEA) — 1 connection</li>
+          <li><span class="time">🌙</span> Overnight flight ~13-16 hrs</li>
+        </ul>
+        <div class="tags">
+          <span class="tag tag-travel">TRAVEL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 1</span>
+      <div class="day-info">
+        <span class="day-name">Bem-Vinda a Lisboa 🌇</span>
+        <span class="day-date">May 16 · Friday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">PM</span> Arrive Lisbon, Uber to Airbnb</li>
+          <li><span class="time">4:00</span> Settle in, freshen up</li>
+          <li><span class="time">5:30</span> Slow walk around neighborhood — first glimpse of azulejo tiles</li>
+          <li><span class="time">7:00</span> Light dinner at local tasca — Caldo Verde + wine</li>
+          <li><span class="time">8:30</span> Golden hour at Miradouro da Graça or Santa Luzia</li>
+        </ul>
+        <p class="photo-ops">📸 Rooftop sunset views, first azulejo wall selfie</p>
+        <div class="tags">
+          <span class="tag tag-travel">TRAVEL</span>
+          <span class="tag tag-food">FOOD</span>
+          <span class="tag tag-photo">PHOTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 2</span>
+      <div class="day-info">
+        <span class="day-name">Belém &amp; Alfama 🏛️</span>
+        <span class="day-date">May 17 · Saturday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">9:00</span> Uber to Belém</li>
+          <li><span class="time">9:15</span> Pastéis de Belém — the original pastéis de nata!</li>
+          <li><span class="time">10:00</span> Jerónimos Monastery (UNESCO)</li>
+          <li><span class="time">11:30</span> Belém Tower — waterfront icon ⚠️ <em>(closed for renovation until late June 2026 — exterior &amp; waterfront still worth the visit!)</em></li>
+          <li><span class="time">12:30</span> Lunch — Polvo à Lagareiro (grilled octopus)</li>
+          <li><span class="time">2:30</span> Tram 28 ride through Graça → Alfama → Baixa</li>
+          <li><span class="time">3:30</span> Stroll through Alfama — get lost in the streets</li>
+          <li><span class="time">4:30</span> Shopping — azulejo shops, cork products, leather goods</li>
+          <li><span class="time">7:30</span> Rooftop petiscos (Portuguese tapas) + Bacalhau à Brás</li>
+        </ul>
+        <p class="photo-ops">📸 Tram 28 action shots, Belém Tower, Alfama alleyways, pastéis de nata close-up</p>
+        <p class="ext-links">
+          <a class="ext-link" href="https://www.visitlisboa.com/en/places/torre-de-belem" target="_blank" rel="noopener">Belém Tower ↗</a>
+          <a class="ext-link" href="https://www.museusemonumentos.pt/en/museus-e-monumentos/jeronimos-monastery" target="_blank" rel="noopener">Jerónimos Monastery ↗</a>
+          <a class="ext-link" href="https://pasteisdebelem.pt/en/" target="_blank" rel="noopener">Pastéis de Belém ↗</a>
+        </p>
+        <div class="tags">
+          <span class="tag tag-culture">CULTURE</span>
+          <span class="tag tag-food">FOOD</span>
+          <span class="tag tag-photo">PHOTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 3</span>
+      <div class="day-info">
+        <span class="day-name">Sintra &amp; Cabo da Roca 🏰🌅</span>
+        <span class="day-date">May 18 · Sunday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">8:00</span> Train from Rossio Station to Sintra (~40 min)</li>
+          <li><span class="time">9:30</span> Pena Palace — colorful hilltop palace + gardens</li>
+          <li><span class="time">12:00</span> Sintra town — lunch + travesseiros pastries</li>
+          <li><span class="time">1:30</span> Quinta da Regaleira — Initiation Well, gardens</li>
+          <li><span class="time">4:00</span> Bus/taxi to Cabo da Roca</li>
+          <li><span class="time">5:00</span> Explore westernmost point of continental Europe</li>
+          <li><span class="time">Sunset</span> Watch the sun set over the Atlantic (~8:30 PM in May)</li>
+          <li><span class="time">Eve</span> Return via Cascais train to Lisbon</li>
+        </ul>
+        <p class="photo-ops">📸 Pena Palace rainbow colors, Regaleira Initiation Well, Cabo da Roca sunset cliffs</p>
+        <p class="ext-links">
+          <a class="ext-link" href="https://www.parquesdesintra.pt/en/parks-monuments/park-and-national-palace-of-pena/" target="_blank" rel="noopener">Pena Palace ↗</a>
+          <a class="ext-link" href="https://www.regaleira.pt/en/" target="_blank" rel="noopener">Quinta da Regaleira ↗</a>
+        </p>
+        <div class="tags">
+          <span class="tag tag-culture">CULTURE</span>
+          <span class="tag tag-adventure">ADVENTURE</span>
+          <span class="tag tag-photo">PHOTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 4</span>
+      <div class="day-info">
+        <span class="day-name">Tiles, Culture &amp; Fado 🎨🎶</span>
+        <span class="day-date">May 19 · Monday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">9:30</span> Sleep in, slow coffee at a local café</li>
+          <li><span class="time">10:30</span> Azulejo Tile-Making Workshop (~2 hrs)</li>
+          <li><span class="time">1:00</span> Lunch — Time Out Market (Mercado da Ribeira) or Arroz de Marisco</li>
+          <li><span class="time">3:00</span> Shopping in Chiado &amp; Príncipe Real — port wine, filigree jewelry, cork</li>
+          <li><span class="time">5:00</span> Livraria Bertrand (world's oldest bookshop) or browse vintage shops</li>
+          <li><span class="time">8:00</span> Fado dinner — Clube de Fado or Mesa de Frades (Alfama)</li>
+          <li><span class="time">9:30</span> Fado begins — port wine, emotion, magic</li>
+        </ul>
+        <p class="photo-ops">📸 Tile workshop creations, Chiado streets, Fado evening ambiance</p>
+        <p class="ext-links">
+          <a class="ext-link" href="https://handson.pt/workshop/the-arts-of-azulejos-portuguese-tile-painting-workshop/" target="_blank" rel="noopener">Hands On Portugal ↗</a>
+          <a class="ext-link" href="https://www.timeoutmarket.com/lisboa/en/" target="_blank" rel="noopener">Time Out Market ↗</a>
+          <a class="ext-link" href="https://clubedefado.pt" target="_blank" rel="noopener">Clube de Fado ↗</a>
+        </p>
+        <div class="tags">
+          <span class="tag tag-culture">CULTURE</span>
+          <span class="tag tag-food">FOOD</span>
+          <span class="tag tag-relax">RELAX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 5</span>
+      <div class="day-info">
+        <span class="day-name">Drive to Odeceixe 🚗🏖️</span>
+        <span class="day-date">May 20 · Tuesday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">9:00</span> Pick up rental car</li>
+          <li><span class="time">9:30</span> Pack up Lisbon Airbnb, hit the road</li>
+          <li><span class="time">Drive</span> Lisbon → Odeceixe (~2h45 via A2/A22)</li>
+          <li><span class="time">12:00</span> Optional scenic stop — Comporta beach village</li>
+          <li><span class="time">2:00</span> Arrive Odeceixe, check into villa</li>
+          <li><span class="time">3:30</span> Explore Odeceixe village — whitewashed houses</li>
+          <li><span class="time">4:30</span> Walk to Praia de Odeceixe — horseshoe beach where river meets ocean</li>
+          <li><span class="time">7:00</span> Fresh seafood dinner in the village</li>
+        </ul>
+        <p class="photo-ops">📸 First beach view, village charm, sunset from villa</p>
+        <div class="tags">
+          <span class="tag tag-travel">TRAVEL</span>
+          <span class="tag tag-relax">RELAX</span>
+          <span class="tag tag-photo">PHOTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 6</span>
+      <div class="day-info">
+        <span class="day-name">Beach Day &amp; Adventure 🏄‍♀️</span>
+        <span class="day-date">May 21 · Wednesday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">8:00</span> Sunrise stretch or yoga on the beach</li>
+          <li><span class="time">9:30</span> Stand-Up Paddleboarding on the river (calm, scenic)</li>
+          <li><span class="time">11:30</span> Optional surf lesson at Water Element</li>
+          <li><span class="time">1:00</span> Beach café lunch — grilled fish + cold Sagres beer</li>
+          <li><span class="time">3:00</span> Rota Vicentina coastal trail hike OR full beach relaxation</li>
+          <li><span class="time">5:00</span> Explore hidden coves at low tide</li>
+          <li><span class="time">7:30</span> Cook at villa (market-fresh fish) or splurge restaurant dinner</li>
+          <li><span class="time">10:00</span> Stargazing from the villa</li>
+        </ul>
+        <p class="photo-ops">📸 SUP on the river, coastal cliff trail, sunset beach silhouettes</p>
+        <p class="ext-links">
+          <a class="ext-link" href="https://water-element.pt/?lang=en" target="_blank" rel="noopener">Water Element Surf ↗</a>
+          <a class="ext-link" href="https://rotavicentina.com/en/" target="_blank" rel="noopener">Rota Vicentina ↗</a>
+          <a class="ext-link" href="https://wetravelportugal.com/odeceixe-beach/" target="_blank" rel="noopener">Odeceixe Beach Guide ↗</a>
+        </p>
+        <div class="tags">
+          <span class="tag tag-adventure">ADVENTURE</span>
+          <span class="tag tag-relax">RELAX</span>
+          <span class="tag tag-food">FOOD</span>
+          <span class="tag tag-photo">PHOTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 7</span>
+      <div class="day-info">
+        <span class="day-name">Return to Lisbon 🌊→🌇</span>
+        <span class="day-date">May 22 · Thursday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">8:00</span> Last morning beach walk / swim</li>
+          <li><span class="time">9:30</span> Coffee &amp; pastries in village</li>
+          <li><span class="time">10:30</span> Pack up, drive to Lisbon (~2h45)</li>
+          <li><span class="time">1:30</span> Return rental car, Uber to Lisbon Airbnb</li>
+          <li><span class="time">3:00</span> Last-minute shopping or revisit a favorite spot</li>
+          <li><span class="time">7:30</span> Farewell dinner — splurge seafood + port wine toast</li>
+        </ul>
+        <p class="photo-ops">📸 Final golden hour rooftop, farewell dinner</p>
+        <div class="tags">
+          <span class="tag tag-travel">TRAVEL</span>
+          <span class="tag tag-food">FOOD</span>
+          <span class="tag tag-photo">PHOTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="day-card">
+    <div class="day-header" onclick="toggle(this)">
+      <span class="day-badge">DAY 8</span>
+      <div class="day-info">
+        <span class="day-name">Fly Home ✈️</span>
+        <span class="day-date">May 23 · Friday</span>
+      </div>
+      <span class="day-chev">▾</span>
+    </div>
+    <div class="day-body">
+      <div class="day-content">
+        <ul class="tl">
+          <li><span class="time">9:00</span> Pack, pastéis de nata from airport bakery</li>
+          <li><span class="time">11:00</span> Uber to Lisbon airport</li>
+          <li><span class="time">PM</span> Flight home to Seattle (arrive same day)</li>
+          <li><span class="time">🇵🇹</span> "Até breve, Portugal"</li>
+        </ul>
+        <div class="tags">
+          <span class="tag tag-travel">TRAVEL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  Azulejo &amp; Sol · Lisbon &amp; Odeceixe · May 2026
+</footer>
+
+<script>
+function toggle(el){ el.closest('.day-card').classList.toggle('open'); }
+</script>
+
+</body>
+</html>

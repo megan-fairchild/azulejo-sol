@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wardrobe &amp; Packing — Azulejo &amp; Sol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tile-border"></div>
+
+<nav class="top-nav">
+  <a href="trip-hub.html">Hub</a>
+  <a href="itinerary.html">Itinerary</a>
+  <a href="meals.html">Food</a>
+  <a href="clothing.html" class="active">Wardrobe</a>
+</nav>
+
+<header class="page-header">
+  <div class="emblem">👗</div>
+  <h1>WARDROBE</h1>
+  <p>What to pack for cobblestones, castles &amp; beaches</p>
+</header>
+
+<main class="container">
+
+  <!-- ==================== DAY CARDS ==================== -->
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Travel &amp; Arrival</span>
+        <span class="cloth-when">Day 0–1 · May 15–16</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Comfortable travel outfit — leggings or soft pants, oversized tee or sweater, sneakers</li>
+          <li>Layer: light jacket or cardigan for the plane</li>
+          <li>Crossbody bag (hands-free for airport)</li>
+          <li>Compression socks for the long flight</li>
+          <li>Change of underwear in carry-on (just in case luggage is delayed!)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Belém &amp; Alfama</span>
+        <span class="cloth-when">Day 2 · May 17</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Linen pants or midi skirt + cute blouse or flowy top</li>
+          <li>Comfortable walking shoes (COBBLESTONES — sneakers or low wedges)</li>
+          <li>Crossbody bag (pickpocket-safe in Alfama)</li>
+          <li>Sunglasses + sunscreen</li>
+          <li>Light cardigan for evening rooftop dinner</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Sintra &amp; Cabo da Roca</span>
+        <span class="cloth-when">Day 3 · May 18</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Athletic-chic: leggings or hiking pants + stylish tee or tank</li>
+          <li>Comfortable sneakers or light hiking shoes (Sintra hills are steep!)</li>
+          <li>Light jacket or windbreaker (Cabo da Roca is VERY windy and cooler)</li>
+          <li>Hair tie (wind at the cliffs!)</li>
+          <li>Small backpack for the day</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Tile Workshop, Shopping &amp; Fado</span>
+        <span class="cloth-when">Day 4 · May 19</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>AM: Casual cute — jeans/pants + nice top (tile workshop = might get clay on you)</li>
+          <li>PM: Change for Fado dinner — smart-casual dress or blouse + nice pants</li>
+          <li>Comfortable shoes that can go from workshop to dinner</li>
+          <li>Scarf or wrap for the cool Alfama evening streets</li>
+          <li>Earrings/jewelry for Fado night out ✨</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Drive to Odeceixe</span>
+        <span class="cloth-when">Day 5 · May 20</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Road trip casual — comfortable shorts or pants + tee</li>
+          <li>Swimsuit UNDER clothes (you might stop at Comporta beach!)</li>
+          <li>Sandals + sneakers in the car</li>
+          <li>Coverup for beach stops</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Beach &amp; Adventure</span>
+        <span class="cloth-when">Day 6 · May 21</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Swimsuit + coverup</li>
+          <li>Rashguard or swim top for SUP/surfing</li>
+          <li>Board shorts or swim leggings (optional)</li>
+          <li>Water shoes for rocky coves</li>
+          <li>Flip flops + sneakers (for coastal trail hike)</li>
+          <li>Sun hat, sunglasses, waterproof sunscreen</li>
+          <li>Light hoodie or flannel for evening stargazing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Return to Lisbon</span>
+        <span class="cloth-when">Day 7 · May 22</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Morning: Beach casual for last walk</li>
+          <li>Afternoon: Change to city outfit for farewell dinner</li>
+          <li>Farewell dinner look: your best outfit! Dress, jumpsuit, or cute top + pants</li>
+          <li>Comfortable shoes for one last Lisbon evening</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cloth-card">
+    <div class="cloth-head" onclick="toggle(this)">
+      <div>
+        <span class="cloth-title">Fly Home</span>
+        <span class="cloth-when">Day 8 · May 23</span>
+      </div>
+      <span class="cloth-chev">▸</span>
+    </div>
+    <div class="cloth-body">
+      <div class="cloth-content">
+        <ul>
+          <li>Comfortable travel outfit (same as arrival or different combo)</li>
+          <li>Easy layers for temperature changes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PACKING CHECKLIST ==================== -->
+
+  <h2 class="section-header">Packing Checklist</h2>
+
+  <div class="pack-grid">
+
+    <div class="person-block">
+      <h3 class="person-name">👚 Clothing</h3>
+      <label><input type="checkbox" data-key="pack-clothing-tops"> 4–5 tops (mix casual &amp; dressy)</label>
+      <label><input type="checkbox" data-key="pack-clothing-bottoms"> 2–3 bottoms (pants, shorts, skirt)</label>
+      <label><input type="checkbox" data-key="pack-clothing-dress"> 1 dress (Fado night / farewell dinner)</label>
+      <label><input type="checkbox" data-key="pack-clothing-jacket"> 1 light jacket / cardigan</label>
+      <label><input type="checkbox" data-key="pack-clothing-windbreaker"> 1 windbreaker (Cabo da Roca!)</label>
+      <label><input type="checkbox" data-key="pack-clothing-swimsuits"> 2 swimsuits</label>
+      <label><input type="checkbox" data-key="pack-clothing-coverup"> Coverup / sarong</label>
+      <label><input type="checkbox" data-key="pack-clothing-rashguard"> Rashguard for water sports</label>
+      <label><input type="checkbox" data-key="pack-clothing-sleepwear"> Sleepwear</label>
+      <label><input type="checkbox" data-key="pack-clothing-underwear"> 7–8 underwear</label>
+      <label><input type="checkbox" data-key="pack-clothing-bras"> 3–4 bras (1 sports)</label>
+      <label><input type="checkbox" data-key="pack-clothing-socks"> 5–6 pairs socks</label>
+      <label><input type="checkbox" data-key="pack-clothing-compression"> Compression socks (flight)</label>
+    </div>
+
+    <div class="person-block">
+      <h3 class="person-name">👟 Shoes</h3>
+      <label><input type="checkbox" data-key="pack-shoes-walking"> Comfortable walking shoes / sneakers</label>
+      <label><input type="checkbox" data-key="pack-shoes-sandals"> Sandals</label>
+      <label><input type="checkbox" data-key="pack-shoes-flipflops"> Flip flops (beach)</label>
+      <label><input type="checkbox" data-key="pack-shoes-dressy"> Dressy shoes (Fado night)</label>
+    </div>
+
+    <div class="person-block">
+      <h3 class="person-name">🕶️ Accessories</h3>
+      <label><input type="checkbox" data-key="pack-acc-sunglasses"> Sunglasses</label>
+      <label><input type="checkbox" data-key="pack-acc-sunhat"> Sun hat</label>
+      <label><input type="checkbox" data-key="pack-acc-scarf"> Scarf / wrap</label>
+      <label><input type="checkbox" data-key="pack-acc-crossbody"> Crossbody day bag</label>
+      <label><input type="checkbox" data-key="pack-acc-clutch"> Small evening clutch or purse</label>
+      <label><input type="checkbox" data-key="pack-acc-jewelry"> Jewelry for going out</label>
+      <label><input type="checkbox" data-key="pack-acc-hairties"> Hair ties &amp; clips</label>
+      <label><input type="checkbox" data-key="pack-acc-umbrella"> Travel umbrella (just in case)</label>
+    </div>
+
+    <div class="person-block">
+      <h3 class="person-name">🧴 Toiletries &amp; Essentials</h3>
+      <label><input type="checkbox" data-key="pack-ess-sunscreen"> Sunscreen SPF 50</label>
+      <label><input type="checkbox" data-key="pack-ess-aftersun"> After-sun / aloe</label>
+      <label><input type="checkbox" data-key="pack-ess-toiletries"> Travel toiletries</label>
+      <label><input type="checkbox" data-key="pack-ess-meds"> Medications / vitamins</label>
+      <label><input type="checkbox" data-key="pack-ess-adapter"> Travel adapter (Portugal = Type F)</label>
+      <label><input type="checkbox" data-key="pack-ess-charger"> Portable charger</label>
+      <label><input type="checkbox" data-key="pack-ess-bottle"> Reusable water bottle</label>
+      <label><input type="checkbox" data-key="pack-ess-passport"> Passport</label>
+      <label><input type="checkbox" data-key="pack-ess-insurance"> Travel insurance docs</label>
+      <label><input type="checkbox" data-key="pack-ess-maps"> Downloaded offline maps</label>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  Pack light, look fabulous. 💅
+</footer>
+
+<script>
+  /* ── Expandable cloth-cards ── */
+  function toggle(head) {
+    const card = head.closest('.cloth-card');
+    card.classList.toggle('open');
+  }
+
+  /* ── Checkbox persistence (localStorage) ── */
+  const STORAGE_KEY = 'azulsol_pack';
+
+  function loadChecks() {
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) {}
+    document.querySelectorAll('input[type="checkbox"][data-key]').forEach(cb => {
+      cb.checked = !!saved[cb.dataset.key];
+    });
+  }
+
+  function saveChecks() {
+    const state = {};
+    document.querySelectorAll('input[type="checkbox"][data-key]').forEach(cb => {
+      state[cb.dataset.key] = cb.checked;
+    });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    loadChecks();
+    document.querySelectorAll('input[type="checkbox"][data-key]').forEach(cb => {
+      cb.addEventListener('change', saveChecks);
+    });
+  });
+</script>
+
+</body>
+</html>

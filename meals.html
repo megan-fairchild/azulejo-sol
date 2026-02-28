@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food &amp; Drink — Azulejo &amp; Sol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tile-border"></div>
+
+<nav class="top-nav">
+  <a href="trip-hub.html">Hub</a>
+  <a href="itinerary.html">Itinerary</a>
+  <a href="meals.html" class="active">Food</a>
+  <a href="clothing.html">Wardrobe</a>
+</nav>
+
+<header class="page-header">
+  <div class="emblem">🍽️</div>
+  <h1>FOOD &amp; DRINK</h1>
+  <p class="subtitle">Seafood feasts, pastéis de nata &amp; port wine</p>
+</header>
+
+<main class="container">
+
+  <!-- ═══════ DAY 1 DINNER ═══════ -->
+  <div class="section-header"><h2>Day 1 — First Night in Lisbon</h2></div>
+
+  <div class="recipe-card">
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title">🍲 Caldo Verde + Petiscos at a Local Tasca</div>
+        <div class="rc-when">Day 1 Dinner · May 16</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content">
+        <div class="rc-label">Where</div>
+        <p>Any tasca in Alfama or Chiado — ask Airbnb host for recs</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Caldo Verde (potato &amp; kale soup)</li>
+          <li>Petiscos (Portuguese tapas)</li>
+          <li>Bread &amp; olives (couvert)</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Vinho Verde (young Portuguese white wine)</p>
+        <div class="rc-note">💡 Couvert (bread/olives/cheese at table) is NOT free — decline if you don't want it</div>
+        <div class="rc-label">Budget</div>
+        <p>~€20-30 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 2 MORNING ═══════ -->
+  <div class="section-header"><h2>Day 2 — Belém &amp; Alfama</h2></div>
+
+  <div class="recipe-card">
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title">🥮 Pastéis de Belém</div>
+        <div class="rc-when">Day 2 Morning · May 17</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content">
+        <div class="rc-label">Where</div>
+        <p>Pastéis de Belém, Rua de Belém 84-92 (THE original since 1837)</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Pastéis de nata (custard tarts) — get at least 4 each</li>
+          <li>Dust with cinnamon + powdered sugar</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Galão (Portuguese latte) or bica (espresso)</p>
+        <div class="rc-note">💡 Expect a queue — the inside dining room often has shorter waits than takeaway</div>
+        <div class="rc-label">Link</div>
+        <p><a class="ext-link" href="https://pasteisdebelem.pt/en/" target="_blank" rel="noopener">Pastéis de Belém ↗</a></p>
+        <div class="rc-label">Budget</div>
+        <p>~€5-8 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 2 LUNCH (swappable) ═══════ -->
+  <div class="recipe-card" data-slot="d2-lunch" data-option="0">
+    <button class="swap-toggle" onclick="swap('d2-lunch',event)">⇄ SWAP</button>
+    <!-- Option 0 -->
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title slot-title">🐙 Polvo à Lagareiro at Ponto Final</div>
+        <div class="rc-when slot-when">Day 2 Lunch · May 17</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content slot-content">
+        <div class="rc-label">Where</div>
+        <p>Ponto Final, Almada (cross the river by ferry — stunning views!)</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Polvo à Lagareiro (oven-roasted octopus with olive oil &amp; garlic)</li>
+          <li>Batatas a murro (smashed potatoes)</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>White wine from Alentejo</p>
+        <div class="rc-note">💡 Get there by 12:30 — no reservations, it fills up fast</div>
+        <div class="rc-label">Budget</div>
+        <p>~€25-35 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 2 DINNER ═══════ -->
+  <div class="recipe-card">
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title">🐟 Bacalhau à Brás + Rooftop Petiscos</div>
+        <div class="rc-when">Day 2 Dinner · May 17</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content">
+        <div class="rc-label">Where</div>
+        <p>Any rooftop bar/restaurant in Alfama — try Portas do Sol or Largo do Grilo area</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Bacalhau à Brás (shredded salt cod with eggs, potatoes, olives)</li>
+          <li>Rooftop petiscos</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Port wine tonic (Porto Tónico) or Sangria</p>
+        <div class="rc-note">💡 Golden hour rooftop views are the real meal</div>
+        <div class="rc-label">Budget</div>
+        <p>~€25-35 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 3 LUNCH ═══════ -->
+  <div class="section-header"><h2>Day 3 — Sintra</h2></div>
+
+  <div class="recipe-card">
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title">🥧 Sintra Pastries + Lunch</div>
+        <div class="rc-when">Day 3 Lunch · May 18</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content">
+        <div class="rc-label">Where</div>
+        <p>Café Saudade or Tascantiga in Sintra center</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Travesseiros (puff pastry with almond cream)</li>
+          <li>Queijadas de Sintra (cheese tarts)</li>
+          <li>Light lunch — try Alheira sausage (smoked bread sausage — NOT red meat, it's poultry/game)</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Fresh orange juice or local beer</p>
+        <div class="rc-label">Budget</div>
+        <p>~€15-25 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 4 LUNCH (swappable) ═══════ -->
+  <div class="section-header"><h2>Day 4 — Tiles, Culture &amp; Fado</h2></div>
+
+  <div class="recipe-card" data-slot="d4-lunch" data-option="0">
+    <button class="swap-toggle" onclick="swap('d4-lunch',event)">⇄ SWAP</button>
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title slot-title">🦑 Time Out Market Highlights</div>
+        <div class="rc-when slot-when">Day 4 Lunch · May 19</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content slot-content">
+        <div class="rc-label">Where</div>
+        <p>Mercado da Ribeira, Av. 24 de Julho (Cais do Sodré)</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Sample from multiple stalls — Arroz de Marisco (seafood rice), grilled fish, açorda (bread stew), petiscos</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Local craft beer or wine</p>
+        <div class="rc-note">💡 Share dishes to try more things. Go at off-peak (~1:30 PM) for better seating.</div>
+        <div class="rc-label">Link</div>
+        <p><a class="ext-link" href="https://www.timeoutmarket.com/lisboa/en/" target="_blank" rel="noopener">Time Out Market ↗</a></p>
+        <div class="rc-label">Budget</div>
+        <p>~€20-30 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 4 DINNER (swappable) ═══════ -->
+  <div class="recipe-card" data-slot="d4-dinner" data-option="0">
+    <button class="swap-toggle" onclick="swap('d4-dinner',event)">⇄ SWAP</button>
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title slot-title">🎶 Fado Dinner at Clube de Fado</div>
+        <div class="rc-when slot-when">Day 4 Dinner · May 19</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content slot-content">
+        <div class="rc-label">Where</div>
+        <p>Clube de Fado, Rua São João da Praça 92, Alfama</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Tasting menu or à la carte — grilled fish, seafood rice</li>
+          <li>The music is the star</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Port wine, Portuguese red</p>
+        <div class="rc-note">💡 BOOK WEEKS AHEAD. Dinner ~8pm, Fado starts ~9:30pm. Dress smart-casual.</div>
+        <div class="rc-label">Link</div>
+        <p><a class="ext-link" href="https://clubedefado.pt" target="_blank" rel="noopener">Clube de Fado ↗</a></p>
+        <div class="rc-label">Budget</div>
+        <p>~€50-70 per person (including minimum spend)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 5 LUNCH ═══════ -->
+  <div class="section-header"><h2>Day 5 — Road Trip to Odeceixe</h2></div>
+
+  <div class="recipe-card">
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title">🏖️ Comporta Beach Lunch</div>
+        <div class="rc-when">Day 5 Lunch · May 20</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content">
+        <div class="rc-label">Where</div>
+        <p>Sublime Comporta restaurant or any beach chiringuito</p>
+        <div class="rc-label">Order</div>
+        <ul>
+          <li>Grilled fish, salad, rice — beach casual</li>
+        </ul>
+        <div class="rc-label">Drink</div>
+        <p>Rosé wine (Comporta is famous for it)</p>
+        <div class="rc-label">Budget</div>
+        <p>~€20-35 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ DAY 6 (swappable) ═══════ -->
+  <div class="section-header"><h2>Day 6 — Odeceixe</h2></div>
+
+  <div class="recipe-card" data-slot="d6-meal" data-option="0">
+    <button class="swap-toggle" onclick="swap('d6-meal',event)">⇄ SWAP</button>
+    <div class="rc-head" onclick="toggle(this)">
+      <div>
+        <div class="rc-title slot-title">🐟 Cook at the Villa — Market-Fresh Fish</div>
+        <div class="rc-when slot-when">Day 6 Dinner · May 21</div>
+      </div>
+      <span class="rc-chev">▾</span>
+    </div>
+    <div class="rc-body">
+      <div class="rc-content slot-content">
+        <div class="rc-label">Where</div>
+        <p>Your Odeceixe villa kitchen</p>
+        <div class="rc-label">Buy</div>
+        <ul>
+          <li>Fresh fish at village market or fishmonger</li>
+          <li>Local vegetables, olive oil, lemons, herbs, wine</li>
+        </ul>
+        <div class="rc-label">Cook</div>
+        <p>Simply grill or bake the fish with olive oil, garlic, lemon. Side of salad + bread.</p>
+        <div class="rc-label">Drink</div>
+        <p>Alentejo white wine from local shop</p>
+        <div class="rc-note">💡 Ask the fishmonger what's freshest. Cooking together = best girls trip memory.</div>
+        <div class="rc-label">Budget</div>
+        <p>~€10-15 per person</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ MUST-TRY BUCKET LIST ═══════ -->
+  <div class="section-header"><h2>Must-Try Bucket List Foods</h2></div>
+
+  <div class="grocery-section">
+    <h4>🇵🇹 The Essential Portuguese Food Checklist</h4>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> ✅ Pastéis de Nata — Day 2 at Pastéis de Belém</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> ✅ Polvo à Lagareiro — Day 2 lunch</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> ✅ Bacalhau à Brás — Day 2 dinner</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> ✅ Caldo Verde — Day 1 dinner</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> ✅ Alheira Sausage — Day 3 Sintra lunch</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> ✅ Arroz de Marisco — Day 4 lunch</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> 🍷 Port Wine — throughout!</label>
+    <label class="grocery-check"><input type="checkbox" onchange="checkItem(this)"> 🥂 Vinho Verde — Day 1</label>
+  </div>
+
+  <!-- ═══════ TIPS ═══════ -->
+  <div class="section-header"><h2>Dining Tips for Portugal</h2></div>
+
+  <div class="grocery-section">
+    <h4>🍴 Good to Know</h4>
+    <ul style="list-style:none;padding:0;">
+      <li style="font-size:0.85rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);">💰 <strong>"Couvert"</strong> (bread/olives/cheese placed on your table) costs €2-5 — you can decline</li>
+      <li style="font-size:0.85rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);">🕐 <strong>Lunch is the bigger meal</strong> in Portugal; dinner is lighter and later (8-9 PM)</li>
+      <li style="font-size:0.85rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);">☕ <strong>"Uma bica, por favor"</strong> = an espresso, please</li>
+      <li style="font-size:0.85rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);">☕ <strong>"Galão"</strong> = Portuguese latte</li>
+      <li style="font-size:0.85rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);">💶 <strong>Tipping:</strong> 5-10% is generous; round up for casual meals</li>
+      <li style="font-size:0.85rem;padding:6px 0;">🐟 <strong>Seafood is priced by weight</strong> at many restaurants — ask "Quanto custa?" before ordering</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  <div class="footer-emblem">🍽️</div>
+  <p>Azulejo &amp; Sol · Lisbon &amp; Odeceixe · May 2026</p>
+</footer>
+
+<script>
+/* ── Toggle expand/collapse ── */
+function toggle(el) {
+  el.closest('.recipe-card').classList.toggle('open');
+}
+
+/* ── Checklist persistence ── */
+function checkItem(cb) {
+  cb.closest('.grocery-check').classList.toggle('checked', cb.checked);
+}
+
+/* ── Swap Data ── */
+const SLOTS = {
+  'd2-lunch': [
+    {
+      title: '🐙 Polvo à Lagareiro at Ponto Final',
+      when:  'Day 2 Lunch · May 17',
+      html:  '<div class="rc-label">Where</div><p>Ponto Final, Almada (cross the river by ferry — stunning views!)</p>'
+           + '<div class="rc-label">Order</div><ul><li>Polvo à Lagareiro (oven-roasted octopus with olive oil &amp; garlic)</li><li>Batatas a murro (smashed potatoes)</li></ul>'
+           + '<div class="rc-label">Drink</div><p>White wine from Alentejo</p>'
+           + '<div class="rc-note">💡 Get there by 12:30 — no reservations, it fills up fast</div>'
+           + '<div class="rc-label">Budget</div><p>~€25-35 per person</p>'
+    },
+    {
+      title: '🦐 Cervejaria Ramiro — Seafood Institution',
+      when:  'Day 2 Lunch · May 17 · ALT',
+      html:  '<div class="rc-label">Where</div><p>Cervejaria Ramiro, Av. Almirante Reis 1-H</p>'
+           + '<div class="rc-label">Order</div><ul><li>Tiger prawns</li><li>Percebes (goose barnacles)</li><li>Clams Bulhão Pato</li><li>Prego (steak sandwich to finish — skip the meat if you like)</li></ul>'
+           + '<div class="rc-label">Drink</div><p>Imperial (draft beer)</p>'
+           + '<div class="rc-note">💡 Book ahead or arrive before noon. Pay per weight for shellfish.</div>'
+           + '<div class="rc-label">Link</div><p><a class="ext-link" href="https://www.cervejariaramiro.com/en/" target="_blank" rel="noopener">Cervejaria Ramiro ↗</a></p>'
+           + '<div class="rc-label">Budget</div><p>~€40-60 per person</p>'
+    }
+  ],
+  'd4-lunch': [
+    {
+      title: '🦑 Time Out Market Highlights',
+      when:  'Day 4 Lunch · May 19',
+      html:  '<div class="rc-label">Where</div><p>Mercado da Ribeira, Av. 24 de Julho (Cais do Sodré)</p>'
+           + '<div class="rc-label">Order</div><ul><li>Sample from multiple stalls — Arroz de Marisco (seafood rice), grilled fish, açorda (bread stew), petiscos</li></ul>'
+           + '<div class="rc-label">Drink</div><p>Local craft beer or wine</p>'
+           + '<div class="rc-note">💡 Share dishes to try more things. Go at off-peak (~1:30 PM) for better seating.</div>'
+           + '<div class="rc-label">Link</div><p><a class="ext-link" href="https://www.timeoutmarket.com/lisboa/en/" target="_blank" rel="noopener">Time Out Market ↗</a></p>'
+           + '<div class="rc-label">Budget</div><p>~€20-30 per person</p>'
+    },
+    {
+      title: '🍤 Arroz de Marisco at Sea Me',
+      when:  'Day 4 Lunch · May 19 · ALT',
+      html:  '<div class="rc-label">Where</div><p>Sea Me — Peixaria Moderna, Rua do Loreto 21</p>'
+           + '<div class="rc-label">Order</div><ul><li>Arroz de Marisco (rich seafood rice with prawns, clams, mussels)</li><li>Fresh oysters</li></ul>'
+           + '<div class="rc-label">Drink</div><p>Alvarinho white wine</p>'
+           + '<div class="rc-label">Budget</div><p>~€35-45 per person</p>'
+    }
+  ],
+  'd4-dinner': [
+    {
+      title: '🎶 Fado Dinner at Clube de Fado',
+      when:  'Day 4 Dinner · May 19',
+      html:  '<div class="rc-label">Where</div><p>Clube de Fado, Rua São João da Praça 92, Alfama</p>'
+           + '<div class="rc-label">Order</div><ul><li>Tasting menu or à la carte — grilled fish, seafood rice</li><li>The music is the star</li></ul>'
+           + '<div class="rc-label">Drink</div><p>Port wine, Portuguese red</p>'
+           + '<div class="rc-note">💡 BOOK WEEKS AHEAD. Dinner ~8pm, Fado starts ~9:30pm. Dress smart-casual.</div>'
+           + '<div class="rc-label">Link</div><p><a class="ext-link" href="https://clubedefado.pt" target="_blank" rel="noopener">Clube de Fado ↗</a></p>'
+           + '<div class="rc-label">Budget</div><p>~€50-70 per person (including minimum spend)</p>'
+    },
+    {
+      title: '🎵 Mesa de Frades — Chapel Fado',
+      when:  'Day 4 Dinner · May 19 · ALT',
+      html:  '<div class="rc-label">Where</div><p>Mesa de Frades, Rua dos Remédios 139A, Alfama (18th century chapel)</p>'
+           + '<div class="rc-label">Order</div><ul><li>Traditional Portuguese dishes, intimate setting</li></ul>'
+           + '<div class="rc-label">Drink</div><p>Wine pairings</p>'
+           + '<div class="rc-note">💡 Tiny venue — book early. Cash sometimes preferred.</div>'
+           + '<div class="rc-label">Budget</div><p>~€45-65 per person</p>'
+    }
+  ],
+  'd6-meal': [
+    {
+      title: '🐟 Cook at the Villa — Market-Fresh Fish',
+      when:  'Day 6 Dinner · May 21',
+      html:  '<div class="rc-label">Where</div><p>Your Odeceixe villa kitchen</p>'
+           + '<div class="rc-label">Buy</div><ul><li>Fresh fish at village market or fishmonger</li><li>Local vegetables, olive oil, lemons, herbs, wine</li></ul>'
+           + '<div class="rc-label">Cook</div><p>Simply grill or bake the fish with olive oil, garlic, lemon. Side of salad + bread.</p>'
+           + '<div class="rc-label">Drink</div><p>Alentejo white wine from local shop</p>'
+           + '<div class="rc-note">💡 Ask the fishmonger what\'s freshest. Cooking together = best girls trip memory.</div>'
+           + '<div class="rc-label">Budget</div><p>~€10-15 per person</p>'
+    },
+    {
+      title: '🦐 Splurge at O Paulo in Aljezur',
+      when:  'Day 6 Dinner · May 21 · ALT',
+      html:  '<div class="rc-label">Where</div><p>O Paulo, Aljezur (~15 min drive from Odeceixe)</p>'
+           + '<div class="rc-label">Order</div><ul><li>Cataplana (seafood stew in copper pot)</li><li>Grilled prawns, local fish</li></ul>'
+           + '<div class="rc-label">Drink</div><p>Local wine</p>'
+           + '<div class="rc-note">💡 Legendary local spot. Cash preferred.</div>'
+           + '<div class="rc-label">Budget</div><p>~€25-40 per person</p>'
+    }
+  ]
+};
+
+/* ── Swap logic ── */
+const SK = 'azulsol_meals';
+
+function loadState() {
+  try { return JSON.parse(localStorage.getItem(SK)) || {}; } catch { return {}; }
+}
+
+function saveState(s) {
+  localStorage.setItem(SK, JSON.stringify(s));
+}
+
+function swap(slot, ev) {
+  ev.stopPropagation();
+  var card = document.querySelector('[data-slot="' + slot + '"]');
+  var opts = SLOTS[slot];
+  if (!opts) return;
+  var cur = parseInt(card.getAttribute('data-option'), 10);
+  var next = (cur + 1) % opts.length;
+  var opt = opts[next];
+  card.querySelector('.slot-title').textContent = opt.title;
+  card.querySelector('.slot-when').textContent = opt.when;
+  card.querySelector('.slot-content').innerHTML = opt.html;
+  card.setAttribute('data-option', next);
+  var state = loadState();
+  state[slot] = next;
+  saveState(state);
+}
+
+/* ── Restore saved swaps on load ── */
+(function init() {
+  var state = loadState();
+  Object.keys(state).forEach(function(slot) {
+    var idx = state[slot];
+    if (!idx) return;
+    var card = document.querySelector('[data-slot="' + slot + '"]');
+    var opts = SLOTS[slot];
+    if (!card || !opts || !opts[idx]) return;
+    var opt = opts[idx];
+    card.querySelector('.slot-title').textContent = opt.title;
+    card.querySelector('.slot-when').textContent = opt.when;
+    card.querySelector('.slot-content').innerHTML = opt.html;
+    card.setAttribute('data-option', idx);
+  });
+})();
+</script>
+
+</body>
+</html>
